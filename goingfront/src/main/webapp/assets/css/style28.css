@@ -1,0 +1,64 @@
+.mysocial{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	transform: translate(-50%,-50%);
+	display: flex;
+}
+.mysocial .fal{
+	list-style: none;
+	margin: 0 5px;
+	display: inline-block;
+}
+.mysocial .fal a{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	transition: .5s;
+	background: #ffc107;
+	overflow: hidden;
+}
+.mysocial .fal:hover a i{
+	color: aliceblue;
+}
+.mysocial .fal a i{
+	display: block;
+	width: 100%;
+	color: #777;
+	text-align: center;
+	line-height: 30px;
+	transition: .5s;
+}
+/* .mysocial .fal:hover a i:nth-child(1){
+	transform: translateY(-30px);
+	
+}
+.mysocial .fal:hover a i:nth-child(2){
+	transform: translateY(-30px);
+	color:#fff;
+} */
+.mysocial .fal:hover:nth-child(1) a{
+	background: #3b5998;
+	color: aliceblue;
+}
+.mysocial .fal:hover:nth-child(2) a{
+	background: #00aced;
+	color: aliceblue;
+}
+.mysocial .fal:hover:nth-child(3) a{
+	background: #007bb6;
+	color: aliceblue;
+}
+.mysocial .fal:hover:nth-child(4) a{
+	background: #dd4b39;
+}
+.mysocial .fal:hover:nth-child(5) a{
+	background: #bc2a8d;
+	color: aliceblue;
+}

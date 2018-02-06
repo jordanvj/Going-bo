@@ -13,10 +13,42 @@ public class PageController {
 		
 		ModelAndView mv = new ModelAndView("page");
 		//mv.addObject("greeting", "Welcome to GoingBo");
+		mv.addObject("title", "Home");
+		mv.addObject("userClickHome", true);
 		return mv;
 	}
-	
-	
+	@RequestMapping(value = "/flights")
+	public ModelAndView  flights() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Flights");
+		mv.addObject("userClickFlights", true);
+		return mv;
+	}
+	@RequestMapping(value = "/hotels")
+	public ModelAndView  hotels() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Hotels");
+		mv.addObject("userClickHotels", true);
+		return mv;
+	}
+	@RequestMapping(value = "/buses")
+	public ModelAndView  buses() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Buses");
+		mv.addObject("userClickBuses", true);
+		return mv;
+	}
+	@RequestMapping(value = "/about")
+	public ModelAndView  about() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "About");
+		mv.addObject("userClickAbout", true);
+		return mv;
+	}
 	
 	
 	
